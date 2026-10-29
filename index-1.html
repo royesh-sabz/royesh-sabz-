@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رویش سبز | قارچ صدفی تازه</title>
+<style>
+  :root { --green:#16783b; --deep:#0c5128; --light:#edf8ef; --ink:#1d2a22; --muted:#68756c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Tahoma, Arial, sans-serif; color:var(--ink); background:#fff; line-height:1.8; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 6%; border-bottom:1px solid #e7eee8; background:#fff; position:sticky; top:0; }
+  .brand { display:flex; align-items:center; gap:10px; color:var(--deep); font-size:1.25rem; font-weight:bold; }
+  .logo { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--light); font-size:25px; }
+  nav a { color:var(--ink); text-decoration:none; margin:0 8px; font-size:.93rem; }
+  .cart { color:var(--green); font-weight:bold; white-space:nowrap; }
+  .hero { padding:52px 7%; display:grid; grid-template-columns:1.1fr .9fr; align-items:center; gap:28px; background:linear-gradient(115deg,#f7fff8,#fff 65%); }
+  .eyebrow { color:var(--green); font-weight:bold; }
+  h1 { color:var(--deep); font-size:clamp(2rem,5vw,3.3rem); line-height:1.35; margin:10px 0; }
+  .hero p { color:var(--muted); max-width:550px; }
+  .hero-art { min-height:260px; display:grid; place-items:center; border-radius:28px; background:radial-gradient(circle at 50% 40%,#fff 0,#e6f4e8 58%,#cde8d1 100%); font-size:clamp(7rem,20vw,12rem); box-shadow:inset 0 0 0 1px #d8eadb; }
+  .btn { display:inline-block; padding:12px 22px; border:0; border-radius:12px; background:var(--green); color:white; text-decoration:none; font:inherit; font-weight:bold; cursor:pointer; }
+  .btn:hover { background:var(--deep); }
+  .btn.secondary { background:#eaf6ec; color:var(--deep); }
+  .features { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; padding:18px 6%; }
+  .feature { text-align:center; background:#f8fbf8; padding:14px 8px; border-radius:14px; font-size:.93rem; }
+  main { padding:24px 6% 50px; }
+  .section-title { color:var(--deep); margin-bottom:18px; }
+  .product { max-width:760px; display:grid; grid-template-columns:190px 1fr; gap:22px; border:1px solid #e2ebe3; border-radius:20px; padding:18px; box-shadow:0 8px 24px #173c1b0a; }
+  .product-art { min-height:180px; display:grid; place-items:center; border-radius:15px; background:linear-gradient(145deg,#f4f4ed,#e5f1e4); font-size:6rem; }
+  .price { color:var(--green); font-size:1.45rem; font-weight:bold; margin:10px 0; }
+  .muted { color:var(--muted); }
+  .order-box { background:var(--light); border-radius:18px; padding:20px; margin-top:28px; max-width:760px; }
+  label { display:block; font-weight:bold; margin:10px 0 5px; }
+  input, textarea { width:100%; border:1px solid #cdded0; border-radius:10px; padding:12px; font:inherit; background:white; }
+  textarea { min-height:85px; resize:vertical; }
+  .quantity { max-width:160px; }
+  .total { font-weight:bold; color:var(--deep); margin:12px 0; }
+  footer { padding:25px 6%; background:#f7faf7; color:var(--muted); text-align:center; font-size:.9rem; }
+  @media (max-width:650px) {
+    header { padding:12px 4%; flex-wrap:wrap; }
+    nav { order:3; width:100%; display:flex; justify-content:center; flex-wrap:wrap; }
+    nav a { margin:0 7px; }
+    .hero { grid-template-columns:1fr; padding:35px 5%; }
+    .hero-art { min-height:190px; }
+    .features { grid-template-columns:1fr; padding:14px 5%; }
+    main { padding:22px 5% 38px; }
+    .product { grid-template-columns:1fr; }
+    .product-art { min-height:150px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">🌿</span><span>رویش سبز<small style="display:block;font-size:.68rem;font-weight:normal;color:#68756c">قارچ صدفی تازه</small></span></div>
+  <nav><a href="#home">صفحه اصلی</a><a href="#products">محصولات</a><a href="#order">ثبت سفارش</a></nav>
+  <a class="cart" href="#order">🛒 سفارش</a>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">تازه، طبیعی و باکیفیت</div>
+    <h1>قارچ صدفی تازه<br>از رویش سبز 🍄</h1>
+    <p>قارچ صدفی تازه با قیمت روشن؛ سفارش را از طریق واتساپ ثبت کنید و محصول را از فارم ما در آخر شهرک امید سبز، کابل تحویل بگیرید.</p>
+    <a class="btn" href="#products">مشاهده محصول</a>
+  </div>
+  <div class="hero-art" aria-label="نماد قارچ صدفی">🍄</div>
+</section>
+
+<section class="features" aria-label="ویژگی‌های فروشگاه">
+  <div class="feature">🌱<br><strong>قارچ صدفی تازه</strong></div>
+  <div class="feature">🇦🇫<br><strong>فعال در افغانستان</strong></div>
+  <div class="feature">💬<br><strong>ثبت سفارش در واتساپ</strong></div>
+</section>
+
+<main>
+  <section id="products">
+    <h2 class="section-title">محصول ما</h2>
+    <article class="product">
+      <div class="product-art">🍄</div>
+      <div>
+        <h3>قارچ صدفی تازه</h3>
+        <p class="muted">قارچ صدفی تازه؛ بدون افزودن سبزی یا محصولات دیگر.</p>
+        <div class="price">۲۰۰ افغانی <span style="font-size:.9rem;font-weight:normal">/ هر کیلو</span></div>
+        <a class="btn secondary" href="#order">سفارش این محصول</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="order-box" id="order">
+    <h2 style="margin-top:0;color:var(--deep)">ثبت سفارش از واتساپ</h2>
+    <p class="muted">مقدار مورد نیاز و معلومات تماس را بنویس؛ سپس سفارش را در واتساپ بفرست. تحویل فقط از فارم ما در آخر شهرک امید سبز، کابل است و ارسال به درِ خانه نداریم.</p>
+    <form id="orderForm">
+      <label for="name">نام شما</label>
+      <input id="name" name="name" placeholder="نام خود را بنویسید" required>
+      <label for="quantity">تعداد کیلوگرام</label>
+      <input class="quantity" id="quantity" name="quantity" type="number" min="1" step="1" value="1" required>
+      <label for="phone">شماره تماس شما</label>
+      <input id="phone" name="phone" type="tel" placeholder="شماره تماس (اختیاری)">
+      <label for="address">زمان مناسب برای آمدن (اختیاری)</label>
+      <input id="address" name="address" placeholder="مثلاً امروز بعد از ظهر">
+      <label for="note">توضیحات (اختیاری)</label>
+      <textarea id="note" name="note" placeholder="زمان مناسب تحویل یا توضیحات دیگر"></textarea>
+      <div class="total" id="total">مجموع: ۲۰۰ افغانی</div>
+      <button class="btn" type="submit">ارسال سفارش در واتساپ</button>
+    </form>
+    <p class="muted" style="font-size:.82rem">محل تحویل: فارم رویش سبز، آخر شهرک امید سبز، کابل. مشتری باید خودش برای گرفتن سفارش به فارم مراجعه کند.</p>
+  </section>
+</main>
+
+<footer>
+  <strong style="color:var(--deep)">رویش سبز 🌿</strong><br>
+  فروش قارچ صدفی تازه در کابل · تحویل حضوری از فارم در آخر شهرک امید سبز<br>
+  © رویش سبز
+</footer>
+
+<script>
+  const pricePerKg = 200;
+  const qtyInput = document.getElementById('quantity');
+  const totalEl = document.getElementById('total');
+  const formatAf = n => new Intl.NumberFormat('fa-AF').format(n);
+  function updateTotal() {
+    const qty = Math.max(1, parseInt(qtyInput.value || '1', 10));
+    totalEl.textContent = 'مجموع: ' + formatAf(qty * pricePerKg) + ' افغانی';
+  }
+  qtyInput.addEventListener('input', updateTotal);
+
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const qty = Math.max(1, parseInt(qtyInput.value || '1', 10));
+    const phone = document.getElementById('phone').value.trim() || 'ذکر نشده';
+    const address = document.getElementById('address').value.trim() || 'ذکر نشده';
+    const note = document.getElementById('note').value.trim() || 'ندارد';
+    const total = qty * pricePerKg;
+    // شماره واتساپ افغانستان با کد کشور 93 و بدون صفر اول.
+    const whatsappNumber = '93773158133';
+    const message = `سلام، می‌خواهم از فروشگاه رویش سبز قارچ صدفی تازه سفارش بدهم.\nنام: ${name}\nمحصول: قارچ صدفی تازه\nمقدار: ${formatAf(qty)} کیلوگرام\nقیمت هر کیلو: ۲۰۰ افغانی\nمجموع: ${formatAf(total)} افغانی\nشماره تماس: ${phone}\nزمان مراجعه به فارم: ${address}\nمحل تحویل: آخر شهرک امید سبز، کابل (تحویل حضوری؛ ارسال به در خانه نداریم)\nتوضیحات: ${note}`;
+        window.open('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message), '_blank');
+  });
+  updateTotal();
+</script>
+</body>
+</html>
